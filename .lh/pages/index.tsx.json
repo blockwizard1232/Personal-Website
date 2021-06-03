@@ -1,0 +1,30 @@
+{
+    "sourceFile": "pages/index.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1622734955680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622735743317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n /* eslint-disable jsx-a11y/accessible-emoji */\n import React from 'react'\n import { GetStaticProps, NextPage } from 'next'\n import Head from 'next/head'\n-import LatestArticles from '../src/components/Landing/LatestArticles'\n import RecentProjects from '../src/components/Landing/RecentProjects'\n import Header from '../src/components/Landing/Header'\n import { Props } from '../src/containers/Interfaces/Interface'\n \n"
+                },
+                {
+                    "date": 1622735905464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n import Header from '../src/components/Landing/Header'\n import { Props } from '../src/containers/Interfaces/Interface'\n \n const Home: NextPage<Props> = (props) => {\n-  const { devData } = props\n \n   return (\n     <>\n       <Head>\n@@ -21,9 +20,8 @@\n         <meta name=\"Description\" content=\"This is a home page of my website!\" />\n       </Head>\n       <section className=\"w-11/12 px-4 md:px-0 pt-40 md:pt-44 lg:pt-48 mx-auto md:w-3/4 lg:w-2/4 mt-0 \">\n         <Header />\n-        <LatestArticles devData={devData} />\n         <RecentProjects />\n       </section>\n     </>\n   )\n"
+                },
+                {
+                    "date": 1622736628904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,28 +26,7 @@\n     </>\n   )\n }\n \n-const getPosts = async () => {\n-  // const headers = { 'api-key': 'u6fFae5kYdEF1NiaUuGZdhTh' }\n-  const res = await fetch('https://dev.to/api/articles?username=prnvbirajdar')\n-  const posts = await res.json()\n \n-  return posts\n-}\n \n-export const getStaticProps: GetStaticProps = async () => {\n-  const devData = await getPosts()\n-\n-  if (!devData) {\n-    return {\n-      notFound: true,\n-    }\n-  }\n-\n-  return {\n-    props: { devData }, // will be passed to the page component as props\n-    revalidate: 1,\n-  }\n-}\n-\n export default Home\n"
+                }
+            ],
+            "date": 1622734955680,
+            "name": "Commit-0",
+            "content": "/* eslint-disable react/button-has-type */\n/* eslint-disable jsx-a11y/anchor-is-valid */\n/* eslint-disable jsx-a11y/accessible-emoji */\nimport React from 'react'\nimport { GetStaticProps, NextPage } from 'next'\nimport Head from 'next/head'\nimport LatestArticles from '../src/components/Landing/LatestArticles'\nimport RecentProjects from '../src/components/Landing/RecentProjects'\nimport Header from '../src/components/Landing/Header'\nimport { Props } from '../src/containers/Interfaces/Interface'\n\nconst Home: NextPage<Props> = (props) => {\n  const { devData } = props\n\n  return (\n    <>\n      <Head>\n        <title>Blockwizard</title>\n\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n        <meta name=\"Home Page\" content=\"welcome to the home page!\" />\n        <meta name=\"Description\" content=\"This is a home page of my website!\" />\n      </Head>\n      <section className=\"w-11/12 px-4 md:px-0 pt-40 md:pt-44 lg:pt-48 mx-auto md:w-3/4 lg:w-2/4 mt-0 \">\n        <Header />\n        <LatestArticles devData={devData} />\n        <RecentProjects />\n      </section>\n    </>\n  )\n}\n\nconst getPosts = async () => {\n  // const headers = { 'api-key': 'u6fFae5kYdEF1NiaUuGZdhTh' }\n  const res = await fetch('https://dev.to/api/articles?username=prnvbirajdar')\n  const posts = await res.json()\n\n  return posts\n}\n\nexport const getStaticProps: GetStaticProps = async () => {\n  const devData = await getPosts()\n\n  if (!devData) {\n    return {\n      notFound: true,\n    }\n  }\n\n  return {\n    props: { devData }, // will be passed to the page component as props\n    revalidate: 1,\n  }\n}\n\nexport default Home\n"
+        }
+    ]
+}

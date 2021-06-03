@@ -1,0 +1,18 @@
+{
+    "sourceFile": "pages/_app.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1622736574076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1622736574076,
+            "name": "Commit-0",
+            "content": "/* eslint-disable react/jsx-props-no-spreading */\nimport React, { useEffect } from 'react'\nimport Head from 'next/head'\nimport { AppProps } from 'next/app'\nimport { useRouter } from 'next/router'\nimport { GoogleFonts } from 'next-google-fonts'\nimport { Windmill } from '@windmill/react-ui'\nimport * as gtag from '../lib/gtag'\nimport Nav from '../src/components/Nav'\nimport ScrollToTop from '../src/containers/scrollToTop'\nimport Footer from '../src/components/Footer'\nimport '../src/css/tailwind.css'\nimport CallToAction from '../src/components/CallToAction'\n\nconst App = ({ Component, pageProps }: AppProps) => {\n  const router = useRouter()\n  useEffect(() => {\n    const handleRouteChange = (url) => {\n      gtag.pageview(url)\n    }\n    router.events.on('routeChangeComplete', handleRouteChange)\n    return () => {\n      router.events.off('routeChangeComplete', handleRouteChange)\n    }\n  }, [router.events])\n\n  return (\n    <>\n      <GoogleFonts href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap\" />\n      <Head>\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"dns-prefetch\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"Logo Icon\" type=\"image/png\" href=\"/fav.png\" />\n        <meta name=\"Description\" content=\"This is a home page of my portfolio website!\" />\n        <meta name=\"title\" property=\"og:title\" content=\"Portfolio Website\" />\n        <meta property=\"og:type\" content=\"Website\" />\n    \n        <meta name=\"description\" property=\"og:description\" content=\"Portfolio Website\" />\n      </Head>\n      <Windmill usePreferences>\n        <Nav />\n        <Component {...pageProps} />\n        <section className=\"w-full mt-8 \">\n          {/* bg-gradient-to-b dark:from-black dark:to-gray-900  from-white to-gray-300 */}\n\n          <CallToAction />\n          <ScrollToTop />\n          <Footer />\n        </section>\n      </Windmill>\n    </>\n  )\n}\nexport default App\n"
+        }
+    ]
+}

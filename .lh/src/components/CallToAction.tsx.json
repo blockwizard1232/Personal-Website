@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/CallToAction.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1622735784515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622735792467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,23 +11,15 @@\n         Whether you have an idea for a project or just want to say hi, feel free to shoot me an email!\n       </p>\n       <div className=\"mb-0 space-x-0 md:space-x-2\">\n         <a\n-          href=\"mailto:blockwiz@gmail.com\"\n+          href=\"mailto:blockwiz3@gmail.com\"\n           className=\"bg-indigo-800 bg-opacity-90 hover:bg-indigo-900 focus:bg-indigo-900 text-indigo-100  mt-6 text-sm font-bold lg:text-base tracking-normal my-5 md:my-7 p-3 px-4 md:px-5 rounded ring-2 ring-gray-400 ring-opacity-50 shadow \"\n         >\n           Say Hello!\n         </a>\n       </div>\n \n-      {/* <div className=\"mb-0 space-x-0 md:space-x-2\">\n-        <a\n-          href=\"mailto:prnvbirajdar@gmail.com\"\n-          className=\"bg-gray-200  hover:bg-gray-300 text-sm font-bold lg:text-base tracking-normal my-5 md:my-7 p-2.5 px-4 md:px-5 rounded ring-2 ring-gray-400 ring-opacity-50 dark:bg-gray-900 dark:bg-opacity-25 dark:hover:bg-opacity-100 dark:focus:bg-opacity-100 shadow \n-        >\n-          Say Hello!\n-        </a>\n-      </div> */}\n     </div>\n   )\n }\n \n"
+                }
+            ],
+            "date": 1622735784515,
+            "name": "Commit-0",
+            "content": "/* eslint-disable jsx-a11y/anchor-is-valid */\nimport React from 'react'\n\nconst CallToAction = () => {\n  return (\n    <div className=\"w-11/12 px-4 py-20 mx-auto text-center md:w-3/4 lg:w-2/4  \">\n      <h2 className=\"mb-2 text-3xl md:text-4xl font-extrabold tracking-tight  md:mb-6 md:leading-tight\">\n        Get In Touch!\n      </h2>\n      <p className=\"mb-7 text-gray-900 dark:text-gray-300 w-5/6 sm:w-3/4 lg:w-5/6 xl:w-3/4 m-auto text-center md:font-medium \">\n        Whether you have an idea for a project or just want to say hi, feel free to shoot me an email!\n      </p>\n      <div className=\"mb-0 space-x-0 md:space-x-2\">\n        <a\n          href=\"mailto:blockwiz@gmail.com\"\n          className=\"bg-indigo-800 bg-opacity-90 hover:bg-indigo-900 focus:bg-indigo-900 text-indigo-100  mt-6 text-sm font-bold lg:text-base tracking-normal my-5 md:my-7 p-3 px-4 md:px-5 rounded ring-2 ring-gray-400 ring-opacity-50 shadow \"\n        >\n          Say Hello!\n        </a>\n      </div>\n\n      {/* <div className=\"mb-0 space-x-0 md:space-x-2\">\n        <a\n          href=\"mailto:prnvbirajdar@gmail.com\"\n          className=\"bg-gray-200  hover:bg-gray-300 text-sm font-bold lg:text-base tracking-normal my-5 md:my-7 p-2.5 px-4 md:px-5 rounded ring-2 ring-gray-400 ring-opacity-50 dark:bg-gray-900 dark:bg-opacity-25 dark:hover:bg-opacity-100 dark:focus:bg-opacity-100 shadow \n        >\n          Say Hello!\n        </a>\n      </div> */}\n    </div>\n  )\n}\n\nexport default CallToAction\n"
+        }
+    ]
+}

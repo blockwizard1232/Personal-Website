@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/containers/projectData.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1622737037346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622737043186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n   },\n   imageDark: '/cov-dark.png',\n   imageLight: '/cov-light.png',\n   techStack: ['React', 'Chart.js', 'COVID-19 API'],\n-  gitHub: 'https://github.com/prnvbirajdar/covid19canada',\n   site: 'https://covid19ca.netlify.app/',\n }\n const reelsDb = {\n   title: 'Reels Movie Db',\n@@ -54,9 +53,8 @@\n   },\n   imageDark: '/keep-dark.png',\n   imageLight: '/keep-light.png',\n   techStack: ['Next.js', 'Firebase', 'Tailwind CSS'],\n-  gitHub: 'https://github.com/prnvbirajdar/NEXT-Google-Keep',\n   site: 'https://google-keep-next.vercel.app/',\n }\n \n export { covid19, keepClone, reelsDb, lift }\n"
+                }
+            ],
+            "date": 1622737037346,
+            "name": "Commit-0",
+            "content": "const lift = {\n  title: 'Lift Workout App',\n  description:\n    'Lift is a resistance training app that allows users to create, track, and update their daily workout routines.',\n  stack: {\n    first: 'Next.js',\n    second: 'Firebase',\n    third: 'Tailwind CSS',\n  },\n  imageDark: '/lift-dark.png',\n  imageLight: '/lift-light.png',\n  techStack: ['Next.js', 'Firebase', 'Tailwind CSS'],\n  site: 'https://lift-next.vercel.app/',\n}\n\nconst covid19 = {\n  title: 'COVID-19 Tracker',\n  description:\n    'This dashboard provides up-to-date information about the COVID-19 outbreak and the vaccination efforts in Canada.',\n  stack: {\n    first: 'React',\n    second: 'Chart.js',\n    third: 'COVID-19 API',\n  },\n  imageDark: '/cov-dark.png',\n  imageLight: '/cov-light.png',\n  techStack: ['React', 'Chart.js', 'COVID-19 API'],\n  gitHub: 'https://github.com/prnvbirajdar/covid19canada',\n  site: 'https://covid19ca.netlify.app/',\n}\nconst reelsDb = {\n  title: 'Reels Movie Db',\n  description:\n    'A Netflix clone that lets users browse through 600,000 movies and find details and watch trailers of their favorite ones.',\n  stack: {\n    first: 'React',\n    second: 'SCSS',\n    third: 'TMDb API',\n  },\n  imageDark: '/reels-dark.png',\n  imageLight: '/reels-light.png',\n  techStack: ['React', 'SCSS', 'TMDb API'],\n  gitHub: 'https://github.com/prnvbirajdar/Movie-Database',\n  site: 'https://reels.netlify.app/',\n}\nconst keepClone = {\n  title: 'Google Keep Clone',\n  description:\n    'A responsive Google Keep clone that allows users to create, delete and save their notes. Dark mode enabled!',\n  stack: {\n    first: 'Next.js',\n    second: 'Firebase',\n    third: 'Tailwind CSS',\n  },\n  imageDark: '/keep-dark.png',\n  imageLight: '/keep-light.png',\n  techStack: ['Next.js', 'Firebase', 'Tailwind CSS'],\n  gitHub: 'https://github.com/prnvbirajdar/NEXT-Google-Keep',\n  site: 'https://google-keep-next.vercel.app/',\n}\n\nexport { covid19, keepClone, reelsDb, lift }\n"
+        }
+    ]
+}
