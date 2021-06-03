@@ -1,0 +1,18 @@
+{
+    "sourceFile": "readme.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1622754637948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1622754637948,
+            "name": "Commit-0",
+            "content": "# tailwind-react-next.js-typescript-eslint-jest-starter\n\nStarter template for building a project using React, Typescript, Next.js, Jest, TailwindCSS and ESLint.\n\n## Setup Instructions\n\n1. Clone or download the project.\n2. `cd` in the project directory.\n3. If you cloned the project, make sure you remove the remote reference to this project by running `git remote rm origin`.\n4. Copy `.env.example` to `.env` as that file is used to load up all your environment variables.\n4. Run `yarn install` or `npm install` to install all dependencies.\n\n## Commands\n\n- `yarn dev`: To start a local development server.\n- `yarn test`: To run the entire unit test suite using `jest`.\n- `yarn test:ci`: To run tests on CI.\n- `yarn lint`: To run the ESLint based linter to find out the issues in the project.\n- `yarn format`: To autoformat all the issues.\n- `yarn export`: Run this after running `yarn analyze` to export a build copy.\n- `yarn production`: To export a production build. Use `yarn start` to serve that.\n\n- `yarn upgrade --latest`: To upgrade all packages to their latest versions (could include breaking changes).\n\n## Code Structure\n\nAll source code is located in the `src/` directory.\n\n1. All Next.js entrypoints are housed in the `src/pages` directory as a default.\n\n    - Currently has `_app.tsx` which bootstraps ChakraUI within this project.\n    - There's also a sample `index.tsx`.\n\n    **NOTE:** Feel free to move `pages` outside of `src/` if that's what you prefer. You'll just need to restart your local development server and everything should continue working as normal.\n\n2. `src/components` are all stateless reusable components.\n3. `src/containers` are more of stateful components for more main level components, like a whole page or screen for example.\n4. `src/css` folder is there just to house any CSS.\n\n    - Currently contains the TailwindCSS initialization CSS file.\n\n5. All env variables are available in `.env` files (`.env` file isn't committed). Whenever you update `.env`, please update `.env.example` and `.env.test` and `next.config.js` to proxy all environment variables properly.\n\n    - You can access these variables in the app source code anywhere using `process.env.<VAR_NAME>`.\n\nMy personal preference is to have the bare minimum code in `./src/pages/` and group stateful logic components in `src/containers` directory. Helps keep everything in one place, neat and tidy. You can change this in any way you prefer.\n\nIf you feel like changing the directory structure, please change the appropriate settings in the following files:\n\n- `.babelrc`\n- `jest.config.js`\n- `postcss.config.js`\n- `tsconfig.json`\n- The `lint` and the `format` scripts in `package.json`\n\n\n"
+        }
+    ]
+}
